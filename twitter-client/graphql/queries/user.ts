@@ -1,6 +1,6 @@
-import {graphql} from "graphql";
+import {graphql} from "../../gql";
 
-export const verifyGoogleToken = graphql(`
+export const verifyGoogleTokenQuery = graphql(`
     #graphql
     query VerifyGoogleToken($token: String!) {
         verifyGoogleToken(token: $token)

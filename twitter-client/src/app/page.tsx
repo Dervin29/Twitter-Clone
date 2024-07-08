@@ -3,7 +3,7 @@ import { BsTwitter, BsBell, BsEnvelope, BsBookmark } from "react-icons/bs";
 import { BiHomeCircle, BiHash, BiUser, BiMoney } from "react-icons/bi";
 import FeedCard from "./components/FeedCard";
 import { SlOptions } from "react-icons/sl";
-import GoogleLoginButton from "./components/GoogleLoginButton"; 
+import GoogleLoginComponent from "./components/GoogleLoginButton";
 
 interface TwitterSidebarButton {
   title: string;
@@ -22,10 +22,6 @@ const sidebarMenuItems: TwitterSidebarButton[] = [
 ];
 
 export default function Home() {
-
-  // const handleGoogleLogin = useCallback((cred: CredentialResponse) => {
-    
-  // },[]);
   return (
     <div className="">
       <div className="grid grid-cols-12 h-screen w-screen px-20">
@@ -62,7 +58,7 @@ export default function Home() {
         <div className="col-span-3">
           <div className="p-5 bg-slate-700 rounded-lg">
             <h1 className="my-2 text-2xl">New to Twitter?</h1>
-            <GoogleLoginButton /> 
+            <GoogleLoginComponent />
           </div>
         </div>
       </div>
